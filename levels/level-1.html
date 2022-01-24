@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    
+    <title>Math Game - Level 1</title>
+    <link rel="stylesheet" type="text/css" href="../math-game.css">
+ </head>
+  
+ <body onload = start_timer();>
+
+   <!--audio source-->
+    <audio id="my-audio">
+       <source src="../sounds/cheer.mp3">
+    </audio>
+
+    <!--This div will have a limited width to fit in most digital screens
+      in vertical-->
+    <div id="menu">
+
+      <!--Important information for the user-->
+        <h1 id="title">Level 1 Question 1</h1>
+        <h1 id="instructions-level">Find the answer to this question</h1>
+        <h1 id="time">20 seconds</h1>
+        <h1 id="score">Score: 0</h1>
+
+        <!--this div has each number and operator separated as an equation-->
+        <div id="equation">
+            <h1 id="num1" style="padding: 0 7px">ㅤ</h1>
+            <h1 id="operator" style="padding: 0 7px">ㅤ</h1>
+            <h1 id="num2" style="padding: 0 7px">ㅤ</h1>
+        </div>
+
+        <hr>
+
+        <!--Each button randomly plays a key role as a dummy answer or the correct answer-->
+        <div>
+           <button onclick="compare_answer(1)" id="option1"></button>
+           <button onclick="compare_answer(2)" id="option2"></button>
+           <button onclick="compare_answer(3)" id="option3"></button>
+           <button onclick="compare_answer(4)" id="option4"></button>
+        </div>
+
+        <hr>
+
+        <!--starts a function to go to the next questinon-->
+        <button hidden  onclick="start_timer()" id="next-question">Next Question</button>
+
+        <!--Not a button the user can click-->
+        <h1 hidden id="Finished">Finished!</h1>
+
+        <hr>
+        
+    </div>
+
+    <!--javascript source-->
+    <Script src="javascript/level-1.js"></script>
+ </body>
+</html>
