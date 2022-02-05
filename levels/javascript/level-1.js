@@ -24,14 +24,15 @@ function start_timer() {
   start_math_question();
 
   //Starts a timer and and stops when it reaches 0
-  let time = document.getElementById("time");
   let timer = 21;
 
   time_stop = setInterval(function(){
+
     timer -= 1;
     time.innerHTML = timer + " seconds";
-
-      if (timer < 1) {
+      
+      //when the timer reaches 0
+      if (timer == 0) {
 
         //stops time and disables all options and reveals the "next question" buttons
         clearInterval(time_stop);
@@ -40,7 +41,8 @@ function start_timer() {
         document.getElementById("option3").disabled = true;
         document.getElementById("option4").disabled = true;
         document.getElementById("next-question").hidden = false;
-
+        
+        //When the user finishes question 10
         if (question_number === 10) {
           document.getElementById("next-question").hidden = true;
           document.getElementById("Finished").hidden = false;
@@ -70,7 +72,7 @@ function start_math_question(){
   
   //IF operation is a SUM
   if(operator == 1){
-    //correct_answer is calculated and the operator is shown such as (+ - * /)
+    //correct_answer is calculated and the operator is shown as '+'
     let correct_answer = number1 + number2;
     document.getElementById('operator').innerHTML = "+";
 
@@ -107,7 +109,7 @@ function start_math_question(){
 
   //IF operation is a SUBSTRACTION
   if (operator == 2){
-    //correct_answer is calculated and the operator is shown such as (+ - * /)
+    //correct_answer is calculated and the operator is shown as '-'
     let correct_answer = number1 - number2;
     document.getElementById('operator').innerHTML = "-";
 
@@ -119,10 +121,10 @@ function start_math_question(){
     //fuction starts when the answer is only above zero
     if (correct_answer >= 1) {
       //Generates dummy answers and shows them on screen (substraction)
-      let wrong_answer1 = Math.ceil(Math.random() * 12)
-      let wrong_answer2 = Math.ceil(Math.random() * 12)
-      let wrong_answer3 = Math.ceil(Math.random() * 12)
-      let wrong_answer4 = Math.ceil(Math.random() * 12)
+      let wrong_answer1 = Math.ceil(Math.random() * 11)
+      let wrong_answer2 = Math.ceil(Math.random() * 11)
+      let wrong_answer3 = Math.ceil(Math.random() * 11)
+      let wrong_answer4 = Math.ceil(Math.random() * 11)
       document.getElementById('option1').innerHTML = wrong_answer1;
       document.getElementById('option2').innerHTML = wrong_answer2;
       document.getElementById('option3').innerHTML = wrong_answer3;
@@ -151,7 +153,7 @@ function start_math_question(){
 
   //IF operation is MULTIPLICATION
   if (operator == 3){
-    //correct_answer is calculated and the operator is shown such as (+ - * /)
+    //correct_answer is calculated and the operator is shown as '×'
     let correct_answer = number1 * number2;
     document.getElementById('operator').innerHTML = "×";
 
@@ -187,7 +189,7 @@ function start_math_question(){
 
   //IF operation is DIVISION
   if (operator == 4){
-    //correct_answer is calculated and the operator is shown such as (+ - * /)
+    //correct_answer is calculated and the operator is shown as '÷'
     let correct_answer = number1 / number2;
     document.getElementById('operator').innerHTML = "÷";
 
@@ -231,7 +233,7 @@ function compare_answer(button_id) {
 
     clearInterval(time_stop);
 
-    
+    //gives 100 points
     score = score + 100;
     document.getElementById('score').innerHTML = "score: " + score;
 
@@ -245,6 +247,7 @@ function compare_answer(button_id) {
     document.getElementById("option4").disabled = true;
     document.getElementById("next-question").hidden = false;
 
+    //When the user finishes question 10
     if (question_number === 10) {
       document.getElementById("next-question").hidden = true;
       document.getElementById("Finished").hidden = false;
@@ -263,6 +266,7 @@ function compare_answer(button_id) {
     document.getElementById("option4").disabled = true;
     document.getElementById("next-question").hidden = false;
 
+    //When the user finishes question 10
     if (question_number === 10) {
       document.getElementById("next-question").hidden = true;
       document.getElementById("Finished").hidden = false;

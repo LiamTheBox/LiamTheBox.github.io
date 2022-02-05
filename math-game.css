@@ -1,24 +1,23 @@
-/*stack overflow has reccomended me to start with zero padding and margin
-like this*/
+/*stack overflow has reccomended me to start with zero padding and margin like this*/
 * {
   padding: 0;
   margin: 0;
 }
-body { /*background in red*/
+body { /*background in red and text font for all text in the page*/
   background: rgb(160, 0, 0);
-  font-family: Century Gothic;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
-#menu { /*Ensure all blocks and text are in their posiitons*/
+#menu { /*Ensure all blocks and text are in the middle*/
   text-align: center;
   margin: 15px auto;
-  width: 390px;
+  width: 350px;
 }
-hr { /*shift words or block into a lower level (its invisible)*/
+hr { /*shifts words or block into a lower level (its invisible)*/
   border-width: 0px;
   margin: 5px;
 }
-#title { /*Title in the page*/
-  font-size: 60px;
+#title { /*Title in the page (Both for main menu and in level menu)*/
+  font-size: 50px;
   border: 7px; 
   font-weight: bold;
   border-style: solid;
@@ -29,20 +28,20 @@ hr { /*shift words or block into a lower level (its invisible)*/
 
 
 
-/*CSS STYLING FOR THE MENU*/
+/*CSS STYLING FOR THE MAIN MENU*/
 #instructions {/*menu instructions for the user*/
-  font-size: 35px;
+  font-size: 30px;
   border: 5px; 
   border-style: solid;
   border-color: rgb(10, 10, 10);
   color: black;
-  margin: 15px 5px;
-  padding: 0px 5px;
+  margin: 10px 10px;
+  padding: 5px;
 }
 #note { /*explains about the levels*/
-  font-size: 25px;
+  font-size: 21px;
   color: black;
-  Margin: 10px;
+  Margin: 15px;
 }
 #level-button { /*white buttons to choose a level*/
   font-size: 55px;
@@ -60,16 +59,16 @@ hr { /*shift words or block into a lower level (its invisible)*/
   border-color: rgb(220, 220, 220);
   color: rgb(220, 220, 220);
 }
-/*End OF MENU'S CSS STYLING FOR THE MENU*/
+/*End OF MENU'S CSS STYLING FOR THE MAIN MENU*/
 
 
 
 
 
-/*CSS STYLING FOR ALL LEVELS*/
+/*CSS STYLING FOR LEVEL MENU*/
 /*Important information such as the instructions, timer, score and equation*/
 #instructions-level { /*instructions*/
-  font-size: 25px;
+  font-size: 22px;
   color: white;
   margin-top: -5px;
 }
@@ -81,8 +80,8 @@ hr { /*shift words or block into a lower level (its invisible)*/
   padding: 10px;
   float: left;
   margin-top: 10px;
-  margin-bottom: 15px;
-  margin-left: 10%;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 #score { /*score archieved*/
   font-size: 20px;
@@ -92,8 +91,8 @@ hr { /*shift words or block into a lower level (its invisible)*/
   padding: 10px;
   float: right;
   margin-top: 10px;
-  margin-bottom: 15px;
-  margin-right: 10%;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 #equation { /*the equation that needs to be solved by the user*/
   font-size: 40px;
@@ -107,14 +106,14 @@ hr { /*shift words or block into a lower level (its invisible)*/
   border-radius: 3cm;
   color: white;
 
-  width: 310px;
+  width: 300px;
   margin:auto;
 }
 
 /*Buttons at the bottom of the screen*/
 /*each option button will have to be separate in order to work with the javascript file*/
 #option1 {
-  font-family: Century Gothic;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: bold;
   border: 5px;
   background-color: transparent;
@@ -122,15 +121,15 @@ hr { /*shift words or block into a lower level (its invisible)*/
   border-style: outset;
   border-color: rgb(255, 255, 255);
 
-  font-size: 30px;
-  width: 80px;
-  height: 80px;
+  font-size: 26.5px;
+  width: 74px;
+  height: 74px;
   margin: 5px;
   padding: 11px;
   overflow: hidden;
 }
 #option2 {
-  font-family: Century Gothic;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: bold;
   border: 5px;
   background-color: transparent;
@@ -138,15 +137,15 @@ hr { /*shift words or block into a lower level (its invisible)*/
   border-style: outset;
   border-color: rgb(255, 255, 255);
 
-  font-size: 30px;
-  width: 80px;
-  height: 80px;
+  font-size: 27px;
+  width: 74px;
+  height: 74px;
   margin: 5px;
   padding: 11px;
   overflow: hidden;
 }
 #option3 {
-  font-family: Century Gothic;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: bold;
   border: 5px;
   background-color: transparent;
@@ -154,15 +153,15 @@ hr { /*shift words or block into a lower level (its invisible)*/
   border-style: outset;
   border-color: rgb(255, 255, 255);
 
-  font-size: 30px;
-  width: 80px;
-  height: 80px;
+  font-size: 27px;
+  width: 74px;
+  height: 74px;
   margin: 5px;
   padding: 11px;
   overflow: hidden;
 }
 #option4 {
-  font-family: Century Gothic;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: bold;
   border: 5px;
   background-color: transparent;
@@ -170,9 +169,9 @@ hr { /*shift words or block into a lower level (its invisible)*/
   border-style: outset;
   border-color: rgb(255, 255, 255);
 
-  font-size: 30px;
-  width: 80px;
-  height: 80px;
+  font-size: 27px;
+  width: 74px;
+  height: 74px;
   margin: 5px;
   padding: 11px;
   overflow: hidden;
@@ -217,7 +216,7 @@ hr { /*shift words or block into a lower level (its invisible)*/
 /*next question button*/
 #next-question {
   font-size: 45px;
-  font-family: Century Gothic;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: bold;
   border: 7px;
   background-color: transparent;
@@ -232,7 +231,7 @@ hr { /*shift words or block into a lower level (its invisible)*/
 /*Finished (not a button)*/
 #Finished {
   font-size: 45px;
-  font-family: Century Gothic;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: bold;
   border: 7px;
   background-color: transparent;
@@ -245,4 +244,4 @@ hr { /*shift words or block into a lower level (its invisible)*/
   text-align: center;
   width: 325px;
 }
-/*END OF LEVEL'S CSS STYLING*/
+/*END OF LEVEL MENU CSS STYLING*/
