@@ -222,7 +222,7 @@ hr { /*shifts words or block into a lower level (its invisible)*/
   background-color: transparent;
   color: rgb(0, 0, 0);
   border-style: outset;
-  border-color: rgb(0, 0, 0);
+  border-color: rgb(10, 10, 10);
 
   padding: 5px;
   text-align: center;
@@ -235,9 +235,9 @@ hr { /*shifts words or block into a lower level (its invisible)*/
   font-weight: bold;
   border: 7px;
   background-color: transparent;
-  color: rgb(0, 0, 0);
+  color: rgb(10, 10, 10);
   border-style: outset;
-  border-color: rgb(0, 0, 0);
+  border-color: rgb(10, 10, 10);
 
   margin: 5px auto;
   padding: 5px 0;
